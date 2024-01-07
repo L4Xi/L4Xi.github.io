@@ -157,6 +157,23 @@
     </section>
   </main>
   <script src="script.js" type="text/javascript"></script>
+
+
+  <script>
+    const url = 'http://devblog.ricky.me/rss.xml'
+    const textarea = document.getElementById('rickys-blog-textarea')
+    feednami.load(url)
+      .then(feed => {
+        textarea.value = ''
+        console.log(feed)
+        for (let entry of feed.entries) {
+          textarea.value += `${entry.title}\n${entry.link}\n\n`
+        }
+      })
+  </script>
+
+
+
 </body>
 
 </html>
