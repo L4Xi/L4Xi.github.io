@@ -535,30 +535,9 @@ input:focus {
   /*  margin-bottom: 2em;*/
 }
 
-.modaloptions {
-  width: 50%;
-  float: left;
-  padding-left: 10px;
-}
 
-.modaloptions a {
-  display: block;
-}
 
-.modaloptions a:hover {
-  color: var(--color-theme);
-  text-decoration: none;
-}
 
-.modaloptions a:before {
-  content: "> ";
-}
-
-.credits {
-  width: 50%;
-  float: left;
-  padding-left: 10px;
-}
 
 
 /* MOBILE */
